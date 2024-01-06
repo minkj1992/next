@@ -5,7 +5,8 @@ PM2 := ./node_modules/.bin/pm2
 .PHONY: watch-dev
 watch-dev: pnpm_install.stamp_generated \
 		stop-watch-dev \
-		self_signed_certificate_generated/.dirstamp
+		self_signed_certificate_generated/.dirstamp \
+	./port_check_kill.mts
 	@$(PM2) cleardump
 	@$(PM2) flush
 	bash -c "trap 'make stop-watch-dev' EXIT; \

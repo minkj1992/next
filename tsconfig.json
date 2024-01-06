@@ -1,0 +1,13 @@
+{
+  "module": "esnext",
+  "compilerOptions": {
+    "strictNullChecks": true,
+    "types": ["node"],
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "strict": true,
+    "incremental": true,
+    "noImplicitOverride": true
+  }
+}
